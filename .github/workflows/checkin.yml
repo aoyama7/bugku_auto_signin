@@ -27,8 +27,8 @@ jobs:
         
     - name: SignIn
       run: |
-        sed -i 's|SCKEY = ""|SCKEY = "${{ secrets.SCKEY }}"|' auto_logon.py
-        sed -i 's|GITC = ""|GITC = "${{ secrets.GITC }}"|' auto_logon.py
-        sed -i 's|USER = ""|USER = "${{ secrets.USER }}"|' auto_logon.py
+        sed -i 's|SCKEY = ""|SCKEY = "${{ secrets.SCKEY }}"|' auto_login.py
+        sed -i 's|GITC = ""|GITC = "${{ secrets.GITC }}"|' auto_login.py
+        sed -i 's|USER = ""|USER = "${{ secrets.USER }}"|' auto_login.py
         python3 auto_login.py
         done
