@@ -1,3 +1,4 @@
 requests
 retrying
 BeautifulSoup4
+lxml
