@@ -31,4 +31,3 @@ jobs:
         sed -i 's|GITC = ""|GITC = "${{ secrets.GITC }}"|' auto_login.py
         sed -i 's|USER = ""|USER = "${{ secrets.USER }}"|' auto_login.py
         python3 auto_login.py
-        done
